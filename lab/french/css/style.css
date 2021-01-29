@@ -1,0 +1,87 @@
+body{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0cff00+1,5bc5ff+43,5a8efc+47,ddff87+100 */
+background: #0cff00; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #0cff00 1%, #5bc5ff 43%, #5a8efc 47%, #ddff87 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #0cff00 1%,#5bc5ff 43%,#5a8efc 47%,#ddff87 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #0cff00 1%,#5bc5ff 43%,#5a8efc 47%,#ddff87 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0cff00', endColorstr='#ddff87',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+body{cursor: pointer}
+h3{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    font-size: 3vw;
+    color: cornsilk;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#container{
+    width: 80vw;
+    height: 20vh;
+    background-color: black;
+    margin: 50 auto 0;
+    border: 10px blue solid;
+    box-sizing: border-box;
+    z-index: 4;
+}
+
+#container:hover{
+    width: 80vw;
+    height: 20vh;
+    background-color: blue;
+    margin: 50 auto 0;
+    border: 10px yellow solid;
+    box-sizing: border-box;
+    z-index: 4;
+}
+
+
+#verse1 p{
+    text-align: center;
+    
+    margin: 0;
+    font-size: 3vw;
+    font-family: "Trajan";
+    padding-top: 5% ;
+    
+}
+
+
+.etched-text {
+    text-shadow: 0 3px yellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blue;
+
+  }
+
+  #text p{
+    text-align: center;
+    height: 10vh;
+    
+    padding-top: 0;
+    margin: 6%;
+
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 0 ;
+    
+    color: black;
+    opacity: 100%;
+    font-size: 1.7vw;
+  }
+
+  #video{
+      padding-top: 20%;
+      vertical-align: middle;
+  }
+
+  iframe{
+      text-align: center;
+      vertical-align: middle;
+  }
