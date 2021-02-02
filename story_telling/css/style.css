@@ -1,4 +1,6 @@
 
+body{background-size: cover;
+background-repeat: no-repeat;}
 
 #verse1 p{
     text-align: center;
@@ -16,32 +18,53 @@
 
 }
 
+a:hover{
+    color: white;
+    opacity: 100%;
+    font-size: 2.3vw;
+}
+a {
+    color:aliceblue;
+    text-underline-position: unset;
+    text-align: center;
+    height: 10vh;
+    margin: 0;
+    font-size: 1.7vw;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5% ;
+    
+
+}
+
 .text{
     color: #a08b72;
     opacity: 60%;
     font-size: 1.7vw;
 }
 
-a {
-    color:aliceblue;
-    text-underline-position: unset;
-}
-a:hover{
-    color: white;
-}
 
-.hover{color: #a08b72;
+
+
+/*.main{color: #a08b72;
     opacity: 60%;
     font-size: 1.7vw;}
 
-.hover:hover{
+.main:hover{
     color: white;
     opacity: 100%;
     font-size: 2.3vw;
     
-}
+}*/
 
 img{ max-width: 50vw;
 vertical-align: middle;
 display: block;
 margin: auto;}
+
+.video{
+    max-width: 50vw;
+vertical-align: middle;
+display: block;
+margin: auto;
+}
