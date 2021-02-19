@@ -1,7 +1,9 @@
 
-body{
+body{background-color: black;
     
 }
+
+
 
 .choice{
     text-align: center;
@@ -10,10 +12,10 @@ body{
 .link--nukun {
     text-align: center;
     text-decoration: none;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 11vw;
+    font-family:'Pixels';
+    font-size: 12vw;
 	color:lightslategray;
-	font-weight:300;
+	font-weight: 300px;
 	text-transform: uppercase;
 	overflow: hidden;
 	padding: 10px 0;
@@ -58,36 +60,64 @@ body{
 
 
 p{
+    font-family:monospace;
+}
+
+@media( max-width: 648px){
+
+.ver1{background-color: white;}
+.ver2{background-color: white;}
+.ver3{background-color: white;}
+.ver4{background-color: white;}
+.ver5{background-color: white;}
+.ver6{background-color: white;}
+.ver7{background-color: white;}
+.ver8{background-color: white;}
+.ver9{background-color: white;}
+
+    
+}
+
+footer{
+    color: white;
+    text-align: center;
     font-family: monospace;
+    border: white solid;
 }
 .ver1{
     margin-right: 6%;
     margin-left: 4%;
+    text-align: center;
+    margin-bottom: 3%;
 }
 .ver1 p{
     padding: 0;
     display: inline;
-    margin-right: 40%;
+    margin-right: 30%;
     background-color:white;
 
 }
 
 .ver2{
-    margin-left: 16%;
-    margin-right: 10%;
+    margin-right: 2%;
+    margin-left: 22%;
+    margin-top: 3%;
+    text-align: center;
 }
 
 .ver2 p{
     padding: 0;
     display: inline;
     text-align: center;
-    margin: 30%;
+    margin: 40%;
     background-color: white;
+    
 
 }
 
 .ver3{
     text-align: center;
+    margin-bottom: 4%;
 }
 
 .ver3 p{
@@ -101,13 +131,14 @@ p{
 .ver4{
     margin-left: 20%;
     margin-right: 8%;
+    text-align:end;
 }
 
 .ver4 p{
     padding: 0;
     display: inline;
     text-align:end;
-    margin: 50%;
+    margin: 40%;
     background-color: white;
 
 }
@@ -156,6 +187,7 @@ p{
 
 .ver8{
     text-align: center;
+    margin-left: 20%;
 }
 
 .ver8 p{
@@ -168,13 +200,15 @@ p{
 }
 .ver9{
     text-align: center;
+    margin-top: 3%;
 }
 
 .ver9 p{
     padding: 0;
     display: inline;
     text-align: center;
-    margin: 60%;
+    margin: 45%;
     background-color: white;
 
 }
+
