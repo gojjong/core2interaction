@@ -2,3 +2,8 @@
     font-family: "Pixels";
     src: url('../font/VT323/VT323-Regular.ttf');
 }
+
+@font-face{
+    font-family: "Mouse";
+    src: url(../font/Mouse/FaceType\ -\ Mouse.otf);
+}
