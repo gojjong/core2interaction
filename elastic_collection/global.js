@@ -62,23 +62,35 @@ function gotAllCards(err) {
    
            var cardOwner = document.createElement("p");
            cardOwner.classList.add("card-owner");
-           cardOwner.innerText = "Cards Owner: "+ card.fields.owner;
+           cardOwner.innerText = "Cards Owner: "+ "  "+card.fields.owner;
            cardContainer.append(cardOwner);
-   
-           var cardOrigin = document.createElement("p");
-           cardOrigin.classList.add("card-origin");
-           cardOrigin.innerText = "Cards Origin: " + card.fields.origin;
-           cardContainer.append(cardOrigin);
-   
+
            var cardDeck = document.createElement("img");
            cardDeck.classList.add("card-deck");
            cardDeck.src = card.fields.deck[0].url;
            cardContainer.append(cardDeck);
+   
+           var cardOrigin = document.createElement("p");
+           cardOrigin.classList.add("card-origin");
+           cardOrigin.innerText = "Cards Origin: " + "  "+card.fields.origin;
+           cardContainer.append(cardOrigin);
+   
+
 
            var cardFront = document.createElement("img");
            cardFront.classList.add("card-front");
            cardFront.src = card.fields.front[0].url;
            cardContainer.append(cardFront);
+
+           cardContainer.addEventListener("click", function(event) {
+            cardOwner.classList.toggle("active");
+            cardOrigin.classList.toggle("active");
+            cardFront.classList.toggle("active");
+            cardDeck.classList.toggle("active");
+            cardContainer.classList.toggle("grid");
+            document.cardDeck.style.background="yellow"
+            document.cardFront.style.background="yellow"
+          });
 
 
            //filtering my items through location
@@ -95,6 +107,9 @@ function gotAllCards(err) {
              } else {
                cardContainer.classList.remove("active");
              }
+
+             document.body.style.backgroundImage='url(./image/boston.png)'
+             document.body.style.backgroundSize='contain'
            });
 
            var filterNy = document.querySelector(".js-ny");
@@ -104,6 +119,9 @@ function gotAllCards(err) {
              } else {
                cardContainer.classList.remove("active");
              }
+
+             document.body.style.backgroundImage='url(./image/ny.png)'
+             document.body.style.backgroundSize='contain'
            });
 
            var filterFlorida = document.querySelector(".js-florida");
@@ -113,6 +131,8 @@ function gotAllCards(err) {
              } else {
                cardContainer.classList.remove("active");
              }
+             document.body.style.backgroundImage='url(./image/florida.png)'
+             document.body.style.backgroundSize='contain'
            });
 
            var filterMaryland = document.querySelector(".js-maryland");
@@ -122,6 +142,9 @@ function gotAllCards(err) {
              } else {
                cardContainer.classList.remove("active");
              }
+
+             document.body.style.backgroundImage='url(./image/maryland.png)'
+             document.body.style.backgroundSize='contain'
            });
 
            var filterOhio = document.querySelector(".js-ohio");
@@ -131,6 +154,9 @@ function gotAllCards(err) {
              } else {
                cardContainer.classList.remove("active");
              }
+
+             document.body.style.backgroundImage='url(./image/ohio.png)'
+             document.body.style.backgroundSize='contain'
            });
 
            var filterMassa = document.querySelector(".js-massa");
@@ -140,6 +166,8 @@ function gotAllCards(err) {
              } else {
                cardContainer.classList.remove("active");
              }
+             document.body.style.backgroundImage='url(./image/massa.png)'
+             document.body.style.backgroundSize='contain'
            });
 
            var filterCali = document.querySelector(".js-cali");
@@ -149,6 +177,8 @@ function gotAllCards(err) {
              } else {
                cardContainer.classList.remove("active");
              }
+             document.body.style.backgroundImage='url(./image/cali.png)'
+             document.body.style.backgroundSize='contain'
            });
 
            var filterOutside = document.querySelector(".js-outside");
@@ -158,11 +188,45 @@ function gotAllCards(err) {
              } else {
                cardContainer.classList.remove("active");
              }
+             document.body.style.backgroundColor='#6a6c83'
            });
-       
-   
+           var filterNa = document.querySelector(".js-na");
+           filterNa.addEventListener("click", function() {
+             if (cardContainer.classList.contains("na")) {
+               cardContainer.classList.toggle("active");
+             } else {
+               cardContainer.classList.remove("active");
+             }
+             document.body.style.backgroundColor='#ab0000'
+           });
+
+           var filterEast = document.querySelector(".js-east");
+           filterEast.addEventListener("click", function() {
+             if (cardContainer.classList.contains("eastcoast")) {
+               cardContainer.classList.toggle("active");
+             } else {
+               cardContainer.classList.remove("active");
+             }
+             document.body.style.backgroundColor='blue'
+           });
+
+           var filterWest = document.querySelector(".js-west");
+           filterWest.addEventListener("click", function() {
+             if (cardContainer.classList.contains("westcoast")) {
+               cardContainer.classList.toggle("active");
+             } else {
+               cardContainer.classList.remove("active");
+             }
+             document.body.style.backgroundColor='#080080'
+           });
 
         
-       })
+
+           //changing background
+        
+       });
+
+      
+
      }
  

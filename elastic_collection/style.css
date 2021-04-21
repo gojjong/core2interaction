@@ -1,6 +1,7 @@
-img{
+/* 02ff2c*/
+
+.card-container img{
     max-width: 200px;
-    border: yellow solid;
 }
 
 body{
@@ -8,41 +9,118 @@ body{
 background-color: #0c00ab;
 }
 .container{
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr;
-    box-sizing: border-box;
+    box-sizing: border-box;*/
+    display: block;
 
 }
+.card-container{
+    border:#6a6c83 solid 1em;
+    background-color:#6a6c83 ;
+}
 
-
+.card-container:hover{
+    background-color: yellow;
+    border: yellow solid 1em;
+    cursor: pointer;
+}
 .card-container.active{
+    
+    margin-left: 12%;
+    margin-top: 5%;
+    display:inline-block;
+}
+
+.card-container.active.grid:hover{
+    border: none;
+}
+.card-container.active.grid{
+    border: none;
+    background-color: yellow;
+    margin-left: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-gap: 8%;
     padding: 1rem;
     box-sizing: border-box;
-    border: white solid 0.5px;
     }
+
 
 .card-container{
     display: none;
 
 }
 
+a{
+    text-decoration: none;
+}
+
 h1{
     color: white;
-    font-size: 5em;
-    font-family: bely-display, sans-serif;
-
+    font-size: 7em;
+    font-family: al-fresco, sans-serif;
     font-weight: 400;
-
     font-style: normal;
+   margin-top: 0%;
+   margin-bottom: 0%;
+   text-align: center;
+   
 
 
 }
 
+#home{
+    margin-top:-11%
+}
+
+
+#home h1{margin-top: 5%;}
+#home h2{
+    font-size: 2em;
+ color: white;
+ background-color: #6a6c83;
+ margin: 0% 30%;
+ border: #6a6c83 solid;
+ border-radius: 50px;
+}
+#home h2:hover{
+    color: black;
+    background-color: yellow;
+    border: yellow solid;
+}
+
+h2{
+    color: black;
+    font-size: 3em;
+    font-family: century-gothic, sans-serif;
+
+    font-weight: 400;
+    
+    font-style: normal;
+    margin: 0;
+    z-index: 1;
+
+
+}
+
+.subheader img{
+    max-width: 100px;
+}
+
+.subheader{
+    text-align: center;
+    margin-bottom: -3%;
+    padding-bottom: -5%;
+}
+
+h2:hover{
+    color:yellow;
+}
+
 p{
-    color: yellow;
+    color: black;
+    background-color: yellow;
     
     font-size: 1.3em;
     font-family: century-gothic, sans-serif;
@@ -65,6 +143,13 @@ p{
 
 }
 
+/*body{
+    background-image:url(./image/boston.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+}*/
+
 
 
 .place:hover{
@@ -74,7 +159,7 @@ p{
 
 .place{   
     color: black;
-    font-size: 1.3em;
+    font-size: 1.5em;
     display: inline;
     font-family: century-gothic, sans-serif;
 
@@ -84,7 +169,80 @@ p{
 
 }
 
-.location{
-    margin-top: -2%;
+.location1{
+    margin-top: -3%;
     margin-bottom: 2%;
+    text-align: center;
+}
+
+.location2{
+    margin-top: -3%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.card-owner{
+    display: none;
+}
+
+.card-owner.active{
+    border: yellow solid 5px;
+    background-color: yellow;
+    font-size: 2.5em;
+    display: grid;
+    text-align: center;
+    
+}
+
+.card-origin{
+    display: none;
+}
+.card-origin.active{
+    border: yellow solid 5px;
+    background-color: yellow;
+    grid-row: 1;
+    font-size: 2.5em;
+    display: grid;
+    text-align: center;
+   
+}
+
+#home{
+    text-align: center;
+}
+
+.header img{
+    max-width: 100px;
+    display: inline;
+    margin:  -5% 0;
+    z-index: 2;
+}
+
+.card-deck{
+    display: inline;
+}
+
+
+.card-deck.active{
+    text-align: center;
+    margin-left: 10%;
+    background-color: yellow;
+    max-height: 20em;
+    margin-top: 5%;
+    display: grid;
+}
+
+.card-front{
+    display: none;
+}
+
+.card-front.active{
+    display: grid;
+    max-height: 20em;
+    background-color: yellow;
+    margin-top: 5%;
+}
+
+.card-deck.img{
+    max-width: 50px;
 }
