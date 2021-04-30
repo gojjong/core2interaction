@@ -1,0 +1,42 @@
+body{
+    background-color: #e7e7e7;
+}
+
+div{
+    margin: 5% 2%;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 20px;
+}
+
+.top h2{ color: #000aff;}
+
+#canvas{
+    background-color: white;
+    border: black 3px solid;
+    box-shadow: 10px 10px;
+    font-family: itc-american-typewriter,serif;
+    padding: 4%;
+font-weight: 500;
+font-style: normal;
+    font-size: 16px;
+}
+
+.mid h2:hover{
+    cursor:pointer;
+    color: #000aff;
+}
+
+.mid{ display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8%;
+    padding: 1rem;}
+
+.mid h2{  width: 15px;  
+    margin: 0 auto;  
+    line-height: 20px;  
+    font-size: 20px;  
+    word-wrap: break-word;}
