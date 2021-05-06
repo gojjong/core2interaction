@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poem Creator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Stoke:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/uaq2lyw.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
@@ -12,17 +14,20 @@
    
 </head>
 <body>
+    <div id="block"></div>
+    <input type="text" id="input">
 
     <div class="top"><h2>#start writing poems</h2></div>
 
     <div class="mid">
-        <h2 class="bg" onclick="generate();">+background</h2>
-        <input type="text" id="canvas">
-        <h2 class="reset" onclick="reset()"><br><br><br> -reset</h2>
-
-    </div>
+        <h2 class="bg" onclick="generate();"><br><br><br><br><br> +style <br><br><br><br><br><br><br><br><br></h2>
+        <div id="canvas"></div>
+        <h2 class="reset" onclick="reset()"><br><br><br><br><br> -reset <br><br><br><br><br><br><br><br><br></h2>
+   </div>
 
     <div class="bottom" style="display: none;"><h2>#save</h2></div>
+    <br><br><br><br><br><br>
+    
     
 
 <script type="text/javascript" src="./global.js" defer></script>
